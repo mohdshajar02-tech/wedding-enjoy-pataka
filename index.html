@@ -1,17 +1,375 @@
-<h2>Contact Me</h2>
+🏠 Home
+👤 About Me
+💻 My Skills
+🚀 My Projects
+🖼️ Gallery — अपनी photos डाल सकोगे
+📞 Contact
+📱 WhatsApp / Email buttons
+✨ Smooth animations
+📱 Mobile-friendly design
+📍 Meerut, Uttar Pradesh
+📧 ksaju0999@gmail.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>Name: Mohd Shajar</p>
+  <title>Mohd Shajar | Personal Website</title>
 
-<p>WhatsApp: 790617033</p>
+  <meta name="description"
+        content="Official personal website of Mohd Shajar from Meerut, Uttar Pradesh.">
 
-<p>Email: ksaju0999@gmail.com</p>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-<p>Location: Meerut, Uttar Pradesh, India</p>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: white;
+      line-height: 1.6;
+    }
 
-<a class="button" href="https://wa.me/91790617033">
-  WhatsApp पर Contact करें
-</a>
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(11,15,25,0.95);
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
 
-<a class="button" href="mailto:ksaju0999@gmail.com">
-  Email Me
-</a>
+    nav h2 {
+      color: #00d9ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #00d9ff;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(135deg, #0b0f19, #111b35);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #00d9ff;
+    }
+
+    .hero p {
+      color: #c8c8c8;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 5px;
+      border-radius: 25px;
+      background: #00d9ff;
+      color: #001018;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #00d9ff;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      color: #ddd;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #151b2b;
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid #252d42;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: #00d9ff;
+    }
+
+    .card h3 {
+      color: #00d9ff;
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #252d42;
+    }
+
+    .contact-box {
+      max-width: 600px;
+      margin: auto;
+      background: #151b2b;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .contact-box p {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #070a11;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 5px;
+      }
+
+      .hero h1 {
+        font-size: 35px;
+      }
+
+      section {
+        padding: 55px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <h2>Mohd Shajar</h2>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div>
+      <h1>Hello, I'm <span>Mohd Shajar</span></h1>
+
+      <p>
+        Welcome to my personal website
+      </p>
+
+      <p>
+        📍 Meerut, Uttar Pradesh, India
+      </p>
+
+      <br>
+
+      <a class="btn" href="#about">About Me</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+      <p>
+        Hello! My name is <strong>Mohd Shajar</strong>.
+        Welcome to my personal website.
+      </p>
+
+      <p>
+        I am from Meerut, Uttar Pradesh.
+        This website is my personal space where I can
+        share information about myself, my skills,
+        projects, photos and contact details.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🌐 Web Development</h3>
+        <p>HTML, CSS and basic website development.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔐 Cybersecurity</h3>
+        <p>Learning and working with cybersecurity concepts.</p>
+      </div>
+
+      <div class="card">
+        <h3>🤖 Technology</h3>
+        <p>Interested in modern technology and AI tools.</p>
+      </div>
+
+      <div class="card">
+        <h3>📱 Digital Skills</h3>
+        <p>Exploring digital platforms and online tools.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🌐 Personal Website</h3>
+        <p>
+          My personal website created using HTML and CSS
+          and published online.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💡 Future Projects</h3>
+        <p>
+          More projects will be added here in the future.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>My Gallery</h2>
+
+    <div class="gallery">
+
+      <!-- अपनी photos की link यहाँ डालना -->
+      <img src="https://via.placeholder.com/400x400?text=My+Photo"
+           alt="My Photo">
+
+      <img src="https://via.placeholder.com/400x400?text=Photo+2"
+           alt="Photo 2">
+
+      <img src="https://via.placeholder.com/400x400?text=Photo+3"
+           alt="Photo 3">
+
+    </div>
+
+    <p style="margin-top:20px;color:#aaa;">
+      अपनी photos बाद में यहाँ add कर सकते हो।
+    </p>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-box">
+
+      <p>📧 <strong>Email:</strong>
+        ksaju0999@gmail.com
+      </p>
+
+      <p>📍 <strong>Location:</strong>
+        Meerut, Uttar Pradesh, India
+      </p>
+
+      <br>
+
+      <a class="btn"
+         href="mailto:ksaju0999@gmail.com">
+        Send Email
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 Mohd Shajar. All Rights Reserved.
+    </p>
+
+    <p>
+      Personal Website
+    </p>
+  </footer>
+
+</body>
+  </html>
